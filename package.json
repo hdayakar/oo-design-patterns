@@ -1,0 +1,21 @@
+{
+  "name": "oo-design-patterns",
+  "version": "1.0.0",
+  "description": "Here we try to cover design patterns with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w",
+    "node": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdayakar/oo-design-patterns.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdayakar/oo-design-patterns/issues"
+  },
+  "homepage": "https://github.com/hdayakar/oo-design-patterns#readme"
+}
