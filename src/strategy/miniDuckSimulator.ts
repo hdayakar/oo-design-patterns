@@ -1,22 +1,33 @@
-class MiniDuckSimulator {
- 
-	public main(args: string[]): void {
-		console.log("test");
- 
-		// MallardDuck	mallard = new MallardDuck();
-		// RubberDuck	rubberDuckie = new RubberDuck();
-		// DecoyDuck	decoy = new DecoyDuck();
- 
-		// ModelDuck	model = new ModelDuck();
+import MallardDuck from './mallardDuck';
+import RubberDuck from './rubberDuck';
+import DecoyDuck from './decoyDuck';
+import ModelDuck from './modelDuck';
+import FlyRocketPowered from './flyRocketPowered';
+import Duck from './duck';
 
-		// mallard.performQuack();
-		// rubberDuckie.performQuack();
-		// decoy.performQuack();
+class MiniDuckSimulator {
+	mallard: MallardDuck;
+	rubberDuckie: RubberDuck;
+	decoy: DecoyDuck;
+	model: ModelDuck;
+
+	public main(): void {
+		
+		this.mallard = new MallardDuck();
+		this.rubberDuckie = new RubberDuck();
+		this.decoy = new DecoyDuck();
+		this.model = new ModelDuck();
+
+		this.mallard.performQuack(); // Quack
+		this.rubberDuckie.performQuack(); // Squeak
+		this.decoy.performQuack(); // << Silence >>
    
-		// model.performFly();	
-		// model.setFlyBehavior(new FlyRocketPowered());
-		// model.performFly();
+		this.model.performFly(); // I can't fly
+		this.model.setFlyBehavior(new FlyRocketPowered());
+		this.model.performFly(); // I'm flying with a rocket
+
 	}
 }
 
-console.log("test1");
+let miniDuckSimulator: MiniDuckSimulator = new MiniDuckSimulator();
+miniDuckSimulator.main();
