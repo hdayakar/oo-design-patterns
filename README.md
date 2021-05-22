@@ -1,5 +1,8 @@
 # Design patterns in object-oriented programming language
-Here we try to cover design patterns with typescript
+Examples written in typescript and supporting class diagrams
 
-## Strategy pattern
+- Decorator
+- factory method
+- observer
+- simple factory
 
