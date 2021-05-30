@@ -27,6 +27,8 @@ export default class RemoteLoader {
 		remoteControl.setCommand(1, kitchenRoomLightOn, kitchenRoomLightOff);
 		remoteControl.setCommand(3, stereoOnWithCD, stereoOff);
 
+		// console.log(remoteControl);
+
 		remoteControl.onButtonWasPushed(0);
 		remoteControl.offButtonWasPushed(0);
 		remoteControl.onButtonWasPushed(1);
