@@ -8,8 +8,6 @@ export default class MallardDuck extends Duck {
 		super();
 		this.quackBehavior = new Quack();
         this.flyBehavior = new FlyWithWings();
- 
-
 	}
  
 	public display(): void {
