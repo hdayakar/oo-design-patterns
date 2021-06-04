@@ -1,6 +1,6 @@
 import Animal from "./Animal";
 
-export default class Dog implements Animal {
+export default class Cat implements Animal {
 	public makeSound(): void {
 		this.meow();
 	}

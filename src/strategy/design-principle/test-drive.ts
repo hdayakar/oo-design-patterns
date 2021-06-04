@@ -11,7 +11,7 @@ import Cat from "./cat";
 // animal.makeSound();
 
 let getAnimal = () => {
-	return new Dog();
+	return new Cat();
 }
 
 let animal: Animal = getAnimal();
