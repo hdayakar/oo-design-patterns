@@ -10,16 +10,15 @@ export default class NoQuarterState implements State {
   
 	public insertQuarter(): void {
 		console.log("You inserted a quarter");
+		this.gumballMachine.setState(this.gumballMachine.getHasQuarterState());
 	}
  
 	public ejectQuarter(): void {
 		console.log("You haven't inserted a quarter");
-		this.gumballMachine.setState(this.gumballMachine.getNoQuarterState());
 	}
  
 	public turnCrank(): void {
 		console.log("You turned, but there's no quarter");
-		this.gumballMachine.setState(this.gumballMachine.getSoldState());
 	}
 
     public dispense(): void {
